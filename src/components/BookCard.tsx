@@ -78,7 +78,7 @@ const BookCard: React.FC<BookCardProps> = ({
             >
               {category}
             </span>
-            
+            <Link to={`/book/${id}`}>
             <button 
               className="px-4 py-1 rounded-lg font-semibold text-black text-sm transition-all duration-200 hover:shadow-md"
               style={{ 
@@ -88,6 +88,7 @@ const BookCard: React.FC<BookCardProps> = ({
             >
               Learn more
             </button>
+            </Link>
           </div>
         </div>
       </div>
